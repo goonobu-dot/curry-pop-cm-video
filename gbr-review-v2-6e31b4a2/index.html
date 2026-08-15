@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071a27">
+  <meta property="og:title" content="GENBAROKU｜演出改良版プレビュー">
+  <meta property="og:description" content="QR、業種分岐、客室トラブル、日報前の溜めを改善した106秒の確認用動画です。">
+  <meta property="og:type" content="video.other">
+  <meta property="og:image" content="poster.jpg">
+  <meta property="og:video" content="video.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1920">
+  <meta property="og:video:height" content="1080">
+  <title>GENBAROKU｜演出改良版プレビュー</title>
+  <style>
+    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #f3f7f8;
+      background: radial-gradient(circle at 50% 0%, #17364b 0%, #071a27 55%, #030a10 100%);
+    }
+    main { width: min(1120px, 100%); }
+    h1 { margin: 0 0 8px; font-size: clamp(22px, 4vw, 40px); }
+    p { margin: 0 0 18px; color: #b6c4cc; line-height: 1.6; }
+    .player { overflow: hidden; border: 1px solid rgba(255,255,255,.14); border-radius: 18px; background: #000; box-shadow: 0 24px 80px rgba(0,0,0,.5); }
+    video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    a { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 16px; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; color: #fff; text-decoration: none; background: rgba(255,255,255,.08); }
+    a.primary { border-color: #ff8a1f; background: #ff8a1f; color: #071a27; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>GENBAROKU｜演出改良版プレビュー</h1>
+    <p>ログイン不要で再生できます。106秒の確認用ドラフトMP4です。</p>
+    <div class="player">
+      <video controls playsinline preload="metadata" poster="poster.jpg">
+        <source src="video.mp4" type="video/mp4">
+        お使いのブラウザは動画再生に対応していません。
+      </video>
+    </div>
+    <div class="links">
+      <a class="primary" href="video.mp4">MP4を直接開く</a>
+      <a href="video.mp4" download>動画をダウンロード</a>
+    </div>
+  </main>
+</body>
+</html>
